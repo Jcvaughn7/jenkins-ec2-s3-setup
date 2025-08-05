@@ -22,8 +22,17 @@ variable "bucket_name" {
 }
 
 variable "jenkins_sg_name" {
-  description = "Security Group name for Jenkins"
+  description = "The name of the Jenkins security group"
   type        = string
-  default     = "jenkins_sg"
+  default     = "jenkins_sg_demo_v2"
 }
 
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+}
+
+variable "my_ip" {
+  description = "Your IP address with CIDR notation"
+  type        = string
+}
